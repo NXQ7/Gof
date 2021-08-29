@@ -1,0 +1,31 @@
+{%extends "layout.html"%}
+{% block content %}
+<div class="row center-align">
+  <h1><strong>Gof App</strong></h1>
+  <h5>Add New Score</h5>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Date</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Course</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Score</label>
+        </div>
+      </div>
+  </div>
+  </form>
+</div>
+<div class="row">
+  <button class="btn waves-effect waves-light col s4 offset-s4" type="submit" name="action">Submit
+    <i class="material-icons right"></i>
+  </button>
+</div>
+</div>
+{%endblock%}

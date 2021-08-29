@@ -21,7 +21,15 @@ def login():
 
 @app.route('/thanks/')
 def thanks():
-    return render_template("thanks.html")   
+    return render_template("thanks.html")
+
+@app.route('/scores/')
+def scores():
+    return render_template("scores.html")
+
+@app.route('/newscores/')
+def newscores():
+    return render_template("newscores.html")        
 
 if __name__=="__main__":
     app.run(debug=True)
