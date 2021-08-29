@@ -17,7 +17,11 @@ def register():
 
 @app.route('/login/')
 def login():
-    return render_template("login.html")    
+    return render_template("login.html")  
+
+@app.route('/thanks/')
+def thanks():
+    return render_template("thanks.html")   
 
 if __name__=="__main__":
     app.run(debug=True)

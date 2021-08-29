@@ -1,36 +1,32 @@
 {%extends "layout.html"%}
 {% block content %}
-<div class="row">
+<div class="row center-align">
+  <h1><strong>Gof App</strong></h1>
+    <h5>Register</h5>
   <form class="col s12">
     <div class="row">
-      <div class="input-field col s4 offset-s3">
-        <input id="email" type="email" class="validate">
+      <div class="input-field col s6 offset-s3">
+        <input placeholder="Email" id="email" type="email" class="validate">
         <label for="email">Email</label>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s4 offset-s3">
-        <input placeholder="First Name" id="first_name" type="text" class="validate">
+      <div class="input-field col s6 offset-s3">
+        <input placeholder="First name" id="First Name" id="first_name" type="text" class="validate">
         <label for="first_name">First Name</label>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s4 offset-s3">
-        <input id="password" type="password" class="validate">
+      <div class="input-field col s6 offset-s3">
+        <input placeholder="Password" id="password" type="password" class="validate">
         <label for="password">Password</label>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s4 offset-s3">
-        <input id="password-"
-
-
+      <div class="input-field col s6 offset-s3">
+        <input placeholder="Password" id="confirm_password" required type="password" class="validate">
+        <label for="password">Confirm Password</label>
       </div>
-
-
     </div>
-    
-    
+      <div class="row">
+        <button class="btn waves-effect waves-light col s2 offset-s5" type="submit" name="action">Submit
+          <i class="material-icons right"></i>
+        </button>
+      </div>
   </form>
 </div>
 {%endblock%}
